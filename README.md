@@ -17,7 +17,9 @@ Kyrah Kotary (Biologist)
 
 # Repository Contents
 ## Data Curation
-barcode.py provides the python script for fitering and whitelisting barcodes.
+Barcodecounter.py provides the python script for fitering and whitelisting barcodes.
+whole_commands.qsub provides salmon commands for generation of human reference index and UMI count matrix.
+
 ## Programmer.R 
 
 Script for filtering, normalization and clustering of genes.

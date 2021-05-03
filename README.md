@@ -16,7 +16,8 @@ Brad Fortunato (Analyst)
 Kyrah Kotary (Biologist)
 
 # Repository Contents
-
+## Data Curation
+barcode.py provides the python script for fitering and whitelisting barcodes.
 ## Programmer.R 
 
 Script for filtering, normalization and clustering of genes.

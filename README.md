@@ -31,9 +31,9 @@ Script for filtering, normalization and clustering of genes.
 
    Alternatively to run on command line:
 
-           `module load R/4.0.2
+            module load R/4.0.2
 
-            Rscript programmer.R`
+            Rscript programmer.R
 
 * Output: plots and panc_cells.rda file
 

@@ -17,4 +17,15 @@ Kyrah Kotary (Biologist)
 
 # Repository Contents
 
-Provide a brief description of each script/code file in this repo, what it does, and how to execute it
+## Programmer.R 
+
+Script for filtering, normalization and clustering of genes.
+
+Input: quants_mat.gz which is output from ALevin
+
+Dependencies: R
+
+Execution: It is recommended to run this script in Rstudio by installing the following packages: Seurat, biomaRt, GenomicFeatures, tidyverse, Matrix, tximport, SeqGSEA, fishpond, EnsDb.Hsapiens.v79
+
+Output: plots and panc_cells.rda file
+

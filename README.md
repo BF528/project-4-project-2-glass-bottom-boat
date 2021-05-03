@@ -16,19 +16,24 @@ Brad Fortunato (Analyst)
 Kyrah Kotary (Biologist)
 
 # Repository Contents
-## Data Curation
-Barcodecounter.py provides the python script for fitering and whitelisting barcodes.
-whole_commands.qsub provides salmon commands for generation of human reference index and UMI count matrix.
 
-## Programmer.R 
+## Programs for Programmer
+
+### programmer.R
 
 Script for filtering, normalization and clustering of genes.
 
-Input: quants_mat.gz which is output from ALevin
+* Input: quants_mat.gz which is output from ALevin
 
-Dependencies: R
+* Dependencies: R
 
-Execution: It is recommended to run this script in Rstudio by installing the following packages: Seurat, biomaRt, GenomicFeatures, tidyverse, Matrix, tximport, SeqGSEA, fishpond, EnsDb.Hsapiens.v79
+* Execution: It is recommended to run this script in Rstudio by installing the following packages: Seurat, biomaRt, GenomicFeatures, tidyverse, Matrix, tximport, SeqGSEA, fishpond, EnsDb.Hsapiens.v79
 
-Output: plots and panc_cells.rda file
+Alternatively to run on command line
+
+`module load R/4.0.2
+
+Rscript programmer.R`
+
+* Output: plots and panc_cells.rda file
 

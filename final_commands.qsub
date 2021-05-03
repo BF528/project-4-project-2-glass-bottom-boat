@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+#SX=sample.fastq
+S1=/projectnb/bf528/project_4_scrnaseq/fastq/SRR3879604
+S2=/projectnb/bf528/project_4_scrnaseq/fastq/SRR3879605
+S3=/projectnb/bf528/project_4_scrnaseq/fastq/SRR3879606
+
+#WX=examplewhitelist.txt
+W1=SRR3879604_whitelist.txt
+W2=SRR3879605_whitelist.txt
+W3=SRR3879606_whitelist.txt
+
+module load salmon
+
+#salmon index -t gencode.v37.transcripts.fa.gz -k 31 --gencode -p 16 -i human_index
+
+#salmon quant -i human_index -l A -1 sample.fastq -2 sample2.fastq --validateMappings -o SX_quant --end 5 --barcodeLength 19 --umiLength 6
+
+#salmon quant -i human_index -l A -1 sample.fastq -2 sample2.fastq --end 5 --barcodeLength 19 --umiLength 6 --validateMappings -o sample_quant
+
+#salmon quant -i human_index -l A -1 <(cat sample.fastq) -2 <(cat sample2.fastq) --end 5 --barcodeLength 19 --umiLength 6 --validateMappings -o sample_quant
+
+salmon alevin --end 5 --barcodeLength 19 --umiLength 6 -l A -1 $S1/SRR3879604_1_bc.fastq.gz $S2/SRR3879605_1_bc.fastq.gz $S3/SRR3879606_1_bc.fastq.gz -2 $S1/SRR3879604_2.fastq.gz $S2/SRR3879605_2.fastq.gz $S3/SRR3879606_2.fastq.gz -i human_index -p 10 --whitelist merged_whitelist.txt -o alevin_output --tgMap txp2gene.tsv
+
+
+

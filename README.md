@@ -29,11 +29,11 @@ Script for filtering, normalization and clustering of genes.
 
 * Execution: It is recommended to run this script in Rstudio by installing the following packages: Seurat, biomaRt, GenomicFeatures, tidyverse, Matrix, tximport, SeqGSEA, fishpond, EnsDb.Hsapiens.v79
 
-Alternatively to run on command line
+   Alternatively to run on command line:
 
-`module load R/4.0.2
+           `module load R/4.0.2`
 
-Rscript programmer.R`
+           `Rscript programmer.R`
 
 * Output: plots and panc_cells.rda file
 

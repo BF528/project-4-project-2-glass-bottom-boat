@@ -16,7 +16,9 @@ Brad Fortunato (Analyst)
 Kyrah Kotary (Biologist)
 
 # Repository Contents
-
+## Data Curation
+Barcodecoutner.py is a python script for counting the appearance of the barcodes on each of the samples.
+final_commands.qsub presents the bash script with the instructions for generating the human index as well as the UMI counts matrix.
 ## Programs for Programmer
 
 ### programmer.R

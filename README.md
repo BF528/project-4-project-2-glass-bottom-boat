@@ -39,3 +39,12 @@ Script for filtering, normalization and clustering of genes.
 
 * Output: plots and panc_cells.rda file
 
+## Programs for Analyst
+### proj_4_data.R
+* Input: panc_cell.rds
+
+* Dependencies: proj_4_data.R
+* 
+* Execution used Seurat, biocmanager, limma, tximport and dplyr
+* 
+*  Output: doheatmap.png, umap.png, novel_marker.csv, total_cell_types.csv

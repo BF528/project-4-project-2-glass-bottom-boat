@@ -16,7 +16,7 @@ W3=SRR3879606_whitelist.txt
 
 module load salmon
 
-#salmon index -t gencode.v37.transcripts.fa.gz -k 31 --gencode -p 16 -i human_index
+salmon index -t gencode.v37.transcripts.fa.gz -k 31 --gencode -p 16 -i human_index
 
 #salmon quant -i human_index -l A -1 sample.fastq -2 sample2.fastq --validateMappings -o SX_quant --end 5 --barcodeLength 19 --umiLength 6
 
